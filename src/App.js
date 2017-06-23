@@ -8,24 +8,22 @@ import Yellowbox from "./Yellowbox";
 class App extends Component {
     constructor(props) {
         super(props);
-               
-		this.state = {new_hobbie:''};				
-	    this.onNewHobbie = this.onNewHobbie.bind(this);					
+        this.state = {hobbies: []};
     }
 
-    onNewHobbie(hobbie) {
-    	this.setState( {new_hobbie: hobbie} )    
+    onNewHobbie = (hobbie) => {
+    	this.setState((prevState) => ({
+            hobbies: [...prevState.hobbies, hobbie]
+        }));
     }
 
     render( ) {
-		const new_hobbie = this.state.new_hobbie
-		          
-		return ( 		   
+		return (
 			<div className="app">
 				<Header />
-				<div className= "container">				
+				<div className= "container">
 					<Greenbox onNewHobbie={this.onNewHobbie}/>
-					<Yellowbox new_hobbie={this.state.new_hobbie}/>
+					<Yellowbox hobbies={this.state.hobbies}/>
 				</div>
 			</div>
 			);
