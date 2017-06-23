@@ -12,12 +12,16 @@ class App extends Component {
     }
 
     onNewHobbie = (hobbie) => {
+        // Look here for better understanding
+        // https://facebook.github.io/react/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous
     	this.setState((prevState) => ({
+            // es6 spread operator, look here
+            // https://davidwalsh.name/spread-operator
             hobbies: [...prevState.hobbies, hobbie]
         }));
     }
 
-    render( ) {
+    render() {
 		return (
 			<div className="app">
 				<Header />
