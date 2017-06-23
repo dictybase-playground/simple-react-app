@@ -1,22 +1,19 @@
-import React from 'react';
 import './App.css';
+import React from 'react';
 
-class Yellowbox extends React.Component {
-	render() {
-        const { hobbies } = this.props;
-		return (
-			<div className= "yellow-box">
-						<h1> My Hobbies ({hobbies.length}) </h1>
-						<ul className= "hobbies">
-                            {hobbies.map((hobbie, index) =>
-                                <li key={index}>
-                                    {hobbie}
-                                </li>
-                            )}
-						</ul>
-			</div>
-		);
-	}
+const Yellowbox = (props) => {
+    return (
+        <div className= "yellow-box">
+                    <h1> My Hobbies ({props.hobbies.length}) </h1>
+                    <ul className= "hobbies">
+                        {props.hobbies.map((hobbie, index) =>
+                            <li key={index}>
+                                {hobbie}
+                            </li>
+                        )}
+                    </ul>
+        </div>
+    );
 }
 
 export default Yellowbox;
