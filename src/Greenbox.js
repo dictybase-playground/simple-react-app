@@ -4,24 +4,28 @@ import Yellowbox from "./Yellowbox";
 
 
 class Greenbox extends React.Component {
-	
-	handleChange(event){
-		this.setState( {new_hobbie: event.target.value} );
+
+	// This syntax ensures `this` is bound within handleClick.
+    // https://facebook.github.io/react/docs/handling-events.html
+	handleChange = (event) => {
+        // use camelCase not snake_case
+		this.setState( {newHobbie: event.target.value} );
 	}
-	
-	handleSubmit(event){	
-	    this.props.onNewHobbie(this.state.new_hobbie);	 
-	    event.preventDefault();	  
-	    document.getElementById("id").value=''; //this clears the input field
+    // Read the link below to understand why we are using handlers
+    // for every form components(such as input here).
+	// https://facebook.github.io/react/docs/forms.html#controlled-components
+	handleSubmit = (event) => {
+	    this.props.onNewHobbie(this.state.newHobbie);
+	    event.preventDefault();
 	}
-	
-	render(){		
+
+	render() {
 		return (
 			<div className="green-box">
-						<form className= "form" onSubmit={this.handleSubmit.bind(this)}>
-							<input className= "add-item"  id='id' type= "text" onChange={this.handleChange.bind(this)}/>
-							<input type= "submit" value= "Add"/>						
-						</form>
+                <form className= "form" onSubmit={this.handleSubmit}>
+                    <input className= "add-item"  id='id' type= "text" onChange={this.handleChange}/>
+                    <input type= "submit" value= "Add"/>
+                </form>
 			</div>
 		);
 	}
