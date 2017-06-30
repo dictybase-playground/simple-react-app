@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import { GreenBox, Submit, Input, Form } from './styles'
 
 
 class HobbieInput extends React.Component {
@@ -27,12 +27,12 @@ class HobbieInput extends React.Component {
 
 	render() {
 		return (
-			<div className="green-box">
-                <form className= "form" onSubmit={this.handleSubmit}>
-                    <input className= "add-item"  id='id' type= "text" onChange={this.handleChange}/>
-                    <input type= "submit" value= "Add"/>
-                </form>
-			</div>
+			<GreenBox>
+                <Form onSubmit={this.handleSubmit}>
+                    <Input  id='id' type= "text" onChange={this.handleChange}/>
+                    <Submit type="submit" value= "Add"/>
+                </Form>
+			</GreenBox>
 		);
 	}
 }
