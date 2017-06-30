@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../components/Header'
 import HobbieList from '../components/HobbieList'
 import HobbieInput from '../components/HobbieInput'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as hobbyActionCreators from '../actions'
-import './App.css'
+import '../components/App.css'
 
 // es6 destructuring http://exploringjs.com/es6/ch_destructuring.html#sec_destructuring-patterns
 const App = ({actions, hobbies }) => (
@@ -29,7 +29,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         // gets passed as props
-        actions: bindActionCreators(addHobbieAction, dispatch)
+        actions: bindActionCreators(hobbyActionCreators, dispatch)
     }
 }
 

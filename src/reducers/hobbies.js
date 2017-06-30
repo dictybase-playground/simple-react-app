@@ -21,4 +21,4 @@ const hobbieReducer = (state = [], action) => {  //takes Redux state and returns
   }
 }
 
-export default hobbieApp
+export default hobbieReducer
