@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import hobbies from './hobbies'
+import hobbieReducer from './hobbies'
 
 
-const hobbieApp = combineReducers({
-  hobbies
+const rootReducer = combineReducers({
+    hobbie: hobbieReducer
 })
 
-export default hobbieApp
+export default rootReducer
