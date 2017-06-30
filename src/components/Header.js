@@ -1,8 +1,9 @@
 import React from 'react'
+import { HeaderDiv } from './styles'
 
 
 const Header = () => (
-	<div className= "header"> My Interactive App </div>
+	<HeaderDiv>My Interactive App</HeaderDiv>
 )
 
 

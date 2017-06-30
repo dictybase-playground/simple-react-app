@@ -8,4 +8,12 @@ const Container = styled.div`
     justify-content: center;
 `;
 
-export { Container }
+const HeaderDiv = styled.div`
+	background: #385c6d;
+	text-align: center;
+	padding: 15px;
+	font-size: 2.5em;
+	color: white;
+`;
+
+export { Container, HeaderDiv }
