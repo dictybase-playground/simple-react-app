@@ -1,18 +1,32 @@
 import React from 'react'
 import Header from './Header'
-import HobbieList from './HobbieList'
-import AddHobbie from '../containers/AddHobbie'
-import VisibleHobbieList from '../containers/VisibleHobbieList'
+import Hobbies from '../components/Hobbies'
+import HobbieInput from '../components/HobbieInput'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { addHobbie as addHobbieAction } from '../actions'
 import './App.css'
 
-const App = () => (
+const App = (props) => (
   <div>
   	<Header />
-  	<div className= "container">	
-  		<AddHobbie />            {/*container components that deal with Redux, dispatch "Actions", etc...*/}
-    	<VisibleHobbieList />							
-	</div>   
+  	<div className= "container">
+  		<HobbieInput />            {/*container components that deal with Redux, dispatch "Actions", etc...*/}
+    	<Hobbies />
+	</div>
   </div>
 )
 
-export default App
+const mapStateToProps = (state) => {
+    return {
+        hobbies: state.hobbies
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        actions: bindActionCreators(addHobbieAction, dispatch)
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

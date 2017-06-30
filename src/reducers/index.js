@@ -3,7 +3,7 @@ import hobbieReducer from './hobbies'
 
 
 const rootReducer = combineReducers({
-    hobbie: hobbieReducer
+    hobbies: hobbieReducer
 })
 
 export default rootReducer
