@@ -5,8 +5,15 @@ import HobbieInput from '../components/HobbieInput'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as hobbyActionCreators from '../actions'
-import '../components/App.css'
 import { Container } from '../components/styles'
+import { injectGlobal } from 'styled-components'
+
+// eslint-disable-next-line
+injectGlobal`
+  	margin: 0;
+  	padding: 0;
+  	font-family: sans-serif;
+`
 
 // es6 destructuring http://exploringjs.com/es6/ch_destructuring.html#sec_destructuring-patterns
 const App = ({actions, hobbies }) => (

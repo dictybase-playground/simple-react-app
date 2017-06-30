@@ -1,5 +1,6 @@
 import React from 'react'
 import Hobbie from './Hobbie'
+import { YellowBox } from './styles'
 
 
 //HobbieList presentational component - renders a list of items, recieves hobbies array
@@ -7,7 +8,7 @@ import Hobbie from './Hobbie'
 
 
 const HobbieList = ({ hobbies }) => (
-  <div className= "yellow-box">
+    <YellowBox>
 	  <h1> My Hobbies: ({hobbies.length}) </h1>
 	  <ul>
 		{hobbies.map(hobbie =>
@@ -17,7 +18,7 @@ const HobbieList = ({ hobbies }) => (
 		  />
 		)}
 	  </ul>
-  </div>
+   </YellowBox>
 )
 
 

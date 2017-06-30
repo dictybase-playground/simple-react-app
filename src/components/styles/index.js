@@ -6,7 +6,7 @@ const Container = styled.div`
     width: 70%;
     margin: 0 auto;
     justify-content: center;
-`;
+`
 
 const HeaderDiv = styled.div`
 	background: #385c6d;
@@ -18,7 +18,7 @@ const HeaderDiv = styled.div`
     @media screen and (max-width: 600px){
         font-size: 2.2em;
     }
-`;
+`
 
 const GreenBox = styled.div`
 	height: 30px;
@@ -29,23 +29,23 @@ const GreenBox = styled.div`
     @media screen and (max-width: 600px){
     	height: 43px;
     }
-`;
+`
 
 const YellowBox = styled.div`
     margin: 3% 1.5%;
     padding: 3% 6%;
     background: #fffab2;
-`;
+`
 
 const Input = styled.input`
 	margin-right: 5px;
-`;
+`
 
 const Submit = styled.input`
-`;
+`
 
 const Form = styled.form`
-`;
+`
 
 export {
     Container,
