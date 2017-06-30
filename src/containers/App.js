@@ -4,7 +4,7 @@ import Hobbies from '../components/Hobbies'
 import HobbieInput from '../components/HobbieInput'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { addHobbie as addHobbieAction } from '../actions'
+import * as hobbyActionCreators from '../actions'
 import './App.css'
 
 const App = (props) => (
@@ -17,6 +17,7 @@ const App = (props) => (
   </div>
 )
 
+// https://github.com/reactjs/react-redux/blob/master/docs/api.md#inject-todos-and-all-action-creators-addtodo-completetodo--as-actions
 const mapStateToProps = (state) => {
     return {
         hobbies: state.hobbies
