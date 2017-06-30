@@ -2,8 +2,8 @@ import React from 'react'
 import Hobbie from './Hobbie'
 
 
-//HobbieList presentational component - renders a list of items, recieves hobbies array 
-//State: Hobbies Array 
+//HobbieList presentational component - renders a list of items, recieves hobbies array
+//State: Hobbies Array
 
 
 const HobbieList = ({ hobbies }) => (
@@ -13,7 +13,7 @@ const HobbieList = ({ hobbies }) => (
 		{hobbies.map(hobbie =>
 		  <Hobbie
 		    key={hobbie.id}
-		    {...hobbie}		   
+		    {...hobbie}
 		  />
 		)}
 	  </ul>

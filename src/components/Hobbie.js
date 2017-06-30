@@ -1,13 +1,9 @@
 import React from 'react'
 
-
 const Hobbie = ({ text }) => (
-
   <li>
     {text}
-  </li>  
- 
+  </li>
 )
-
 
 export default Hobbie
