@@ -1,9 +1,11 @@
 # React + Redux App
 
-The project is converted into a [redux](http://redux.js.org/) application.
+The initial [project](https://github.com/dictybase-playground/simple-react-app)
+created with [cra](https://github.com/facebookincubator/create-react-app) is
+converted into a [redux](http://redux.js.org/) application.
 
 ## Learning redux
-Here are some relevant useful guides for working with redux at [dictyBase](http://dictybase.org)
+Here are some relevant and useful guides for working with redux at [dictyBase](http://dictybase.org).
 
 ### Sceencasts
 * **[Part 1: Getting Started with Redux](https://egghead.io/series/getting-started-with-redux)** - Learn the basics of Redux directly from its creator (30 free videos)
@@ -16,9 +18,6 @@ Here are some relevant useful guides for working with redux at [dictyBase](http:
 
 For any reference or documentation, always **always** refers to the official
 [website](http://redux.js.org) that is always reliable and up to date.
-
-
-### Example Apps
 
 
 ## Available Scripts
