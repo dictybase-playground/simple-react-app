@@ -3,9 +3,22 @@
 The project is converted into a [redux](http://redux.js.org/) application.
 
 ## Learning redux
-### Sceencast
-**[Part 1: Getting Started with Redux](https://egghead.io/series/getting-started-with-redux) (30 free videos)**<br>
-**[Part 2: Building React Applications with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux) (27 free videos)**<br>
+Here are some relevant useful guides for working with redux at [dictyBase](http://dictybase.org)
+
+### Sceencasts
+* **[Part 1: Getting Started with Redux](https://egghead.io/series/getting-started-with-redux)** - Learn the basics of Redux directly from its creator (30 free videos)
+* **[Part 2: Building React Applications with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux)** - The followup tutorial (27 free videos)
+* **[Learn Redux](https://learnredux.com)** — Build a simple photo app that will simplify the core ideas behind Redux, React Router and React.js
+
+### Tutorials
+* **[Official async example](http://redux.js.org/docs/introduction/Examples.html#async)** — The official example which includes reading from an external async API.
+* **[Step by step tutorial](https://github.com/happypoulp/redux-tutorial)** - A detail step by step command line based tutorial for grasping the various concept of redux.
+
+For any reference or documentation, always **always** refers to the official
+[website](http://redux.js.org) that is always reliable and up to date.
+
+
+### Example Apps
 
 
 ## Available Scripts
