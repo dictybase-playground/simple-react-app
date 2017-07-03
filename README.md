@@ -1,8 +1,18 @@
-# Redux App
+# React + Redux + styled-components App
 
-This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides a simple way to start React projects with no build configuration needed.
+The previous `Redux` [project](https://github.com/dictybase-playground/simple-react-app/tree/feature/idiomatic-redux)
+in now styled with [styled-components](https://github.com/styled-components/styled-components).
 
-Projects built with Create-React-App include support for ES6 syntax, as well as several unofficial / not-yet-final forms of Javascript syntax such as Class Properties and JSX.  See the list of [language features and polyfills supported by Create-React-App](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#supported-language-features-and-polyfills) for more information.
+## Learning styled-components
+* **[Official documentation](https://www.styled-components.com/docs)** - Start from the basics and move to advanced if neccessary.
+* **[Built with
+  styled-components](https://github.com/styled-components/styled-components#built-with-styled-components)**
+  - 3rd party libraries built with styled-components, gives some general idea
+  how it is being used, reading the source codes of some of the
+  [boilerplates](https://github.com/styled-components/styled-components#boilerplates)
+  might be useful.
+* **[Grid with styled-components](http://jxnblk.com/grid-styled/) - `styled-components` based grid system which we will be using 
+
 
 ## Available Scripts
 
