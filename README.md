@@ -5,13 +5,14 @@ in now styled with [styled-components](https://github.com/styled-components/styl
 
 ## Learning styled-components
 * **[Official documentation](https://www.styled-components.com/docs)** - Start from the basics and move to advanced if neccessary.
+* **[Styled components example/tutorial](https://medium.com/@lvarayut/styled-components-in-action-723852f2a93d)** - A decent example based tutorial.
 * **[Built with
   styled-components](https://github.com/styled-components/styled-components#built-with-styled-components)**
   - 3rd party libraries built with styled-components, gives some general idea
   how it is being used, reading the source codes of some of the
   [boilerplates](https://github.com/styled-components/styled-components#boilerplates)
   might be useful.
-* **[Grid with styled-components](http://jxnblk.com/grid-styled/) - `styled-components` based grid system which we will be using 
+* **[Grid with styled-components](http://jxnblk.com/grid-styled/)** - `styled-components` based grid system which we will be using at dictyBase. 
 
 
 ## Available Scripts
