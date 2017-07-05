@@ -14,6 +14,31 @@ in now styled with [styled-components](https://github.com/styled-components/styl
   might be useful.
 * **[Grid with styled-components](http://jxnblk.com/grid-styled/)** - `styled-components` based grid system which we will be using at dictyBase. 
 
+## Consistent code formatting
+Install [prettier](https://github.com/prettier/prettier) either globally or
+locally to format all codes. 
+
+### ESLint
+Configure or create `.eslintrc` with the following basic
+configuration,
+
+```
+{
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+```
+Read [here](https://github.com/prettier/prettier#eslint) for installing
+required modules or any more additional information.
+
+### Editor integration
+`prettier` must be integrated with your editor. Read
+[here](https://github.com/prettier/prettier#editor-integration) for information
+on how to set it up with your editor of choice.
+
 
 ## Available Scripts
 
