@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react"
 
-const Hobbie = ({ text }) => (
+const Hobbie = ({ text }) =>
   <li>
     {text}
   </li>
-)
 
 export default Hobbie
