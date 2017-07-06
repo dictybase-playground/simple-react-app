@@ -4,10 +4,14 @@
   "private": true,
   "devDependencies": {
     "enzyme": "^2.8.2",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "prettier": "^1.5.2",
     "react-addons-test-utils": "^15.5.1",
     "react-scripts": "^1.0.2"
   },
   "dependencies": {
+    "grid-styled": "^2.0.0-7",
     "prop-types": "^15.5.10",
     "react": "^15.5.0",
     "react-dom": "^15.5.0",

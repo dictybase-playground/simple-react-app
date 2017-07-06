@@ -39,6 +39,12 @@ required modules or any more additional information.
 [here](https://github.com/prettier/prettier#editor-integration) for information
 on how to set it up with your editor of choice.
 
+### Prettier format options at dictyBase
+Default values are used for format
+[options](https://github.com/prettier/prettier#options) that are not mentioned
+here.
+
+* **Semicolons** - `false`
 
 ## Available Scripts
 
